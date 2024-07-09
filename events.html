@@ -83,6 +83,11 @@
                 height:95%
             }
 
+            .navlink, .navlink:hover, .navlink:active, .navlink:visited{
+                color:white;
+                text-decoration:none;
+            } 
+
         </style>
         
     
@@ -100,7 +105,7 @@
             </div>
         </div>
 
-        <div class="container-fluid" style="position:sticky; top:0px; z-index:9;"> 
+        <div class="container-fluid" style="position:sticky; top:0px; z-index:9; margin-top:-1px"> 
             <div class="row justify-content-between" style="background-image: url(https://raw.githubusercontent.com/workersmakepossible/peoplesmanifesto/main/assets/TPMNavbar.png); background-size:cover ; background-repeat: no-repeat;">
 
                 <div class="col-1"></div>
@@ -108,12 +113,12 @@
                 <div class="col"><img src="https://github.com/workersmakepossible/peoplesmanifesto/blob/main/assets/TPM%20Logo.png?raw=true" style="height:8vw; padding-bottom:5px;"></div>
 
                 <div class="col-6 d-flex align-items-center" style="justify-content:space-around;">
-                    <button class="btn btn-lg navbutton-active" href="https://workersmakepossible.github.io/peoplesmanifesto/events.html">Events</button>
-                    <button class="btn btn-lg navbutton" href="https://workersmakepossible.github.io/peoplesmanifesto/signatories.html">Signatories</button>
-                    <button class="btn btn-lg navbutton" href="https://workersmakepossible.github.io/peoplesmanifesto/chapters.html">Chapters</button>
-                    <button class="btn btn-lg navbutton" href="https://workersmakepossible.github.io/peoplesmanifesto/summary.html">Summary</button>
-                    <button class="btn btn-lg navbutton" href="https://workersmakepossible.github.io/peoplesmanifesto/downloads.html">Downloads</button>
-                    <button class="btn btn-lg navbutton" href="https://workersmakepossible.github.io/peoplesmanifesto"><i class="bi bi-house-fill"></i></button>
+                    <button class="btn btn-lg navbutton navbutton-active">Events</button>
+                    <button class="btn btn-lg navbutton"><a class="navlink" href="https://workersmakepossible.github.io/peoplesmanifesto/signatories.html">Signatories</a></button>
+                    <button class="btn btn-lg navbutton"><a class="navlink" href="https://workersmakepossible.github.io/peoplesmanifesto/chapters.html">Chapters</a></button>
+                    <button class="btn btn-lg navbutton"><a class="navlink" href="https://workersmakepossible.github.io/peoplesmanifesto/signatories.html">Signatories</a></button>
+                    <button class="btn btn-lg navbutton"><a class="navlink" href="https://workersmakepossible.github.io/peoplesmanifesto/downloads.html">Downloads</a></button>
+                    <button class="btn btn-lg navbutton"><a class="navlink" href="https://workersmakepossible.github.io/peoplesmanifesto/"><i class="bi bi-house-fill"></i></a></button>
                 </div>
                 <div class="col-1"></div>
             </div>     
