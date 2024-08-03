@@ -88,20 +88,24 @@
                 text-decoration:none;
             } 
 
-            .expanding-desc, .expanding-desc:visited, .expanding-desc:active{
-                text-decoration: none; 
-                color:inherit;
-                background-color:#8fd3a5;
-                padding:10px;
-                border-radius:100px;
+            
+
+            .mobilenavlink, .mobilenavlink:visited, .mobilenavlink:active{
+                text-decoration:none;
+                color:black;
             }
 
-            .expanding-desc:hover{
-                text-decoration: none; 
-                color:inherit;
-                background-color:#8fd3a5;
-                padding:13px;
-                border-radius:100px;
+            .navmenu{
+                background-color: white;
+            }
+
+            .navbtn{
+                background-color:#53AF99;
+                font-weight:bold;
+            }
+
+            .navbar{
+                background-color:#53AF99;
             }
 
             .logo{
@@ -113,45 +117,50 @@
         </style>
         
 
-        <div class="container-fluid" style="position:sticky; top:0px; z-index:9; margin-top:-1px"> 
-            <div class="row justify-content-between" style="background-image: url(https://raw.githubusercontent.com/workersmakepossible/peoplesmanifesto/main/assets/TPMNavbar.png); background-size:cover ; background-repeat: no-repeat;">
-
-                <div class="col-1"></div>
-                
-                <div class="col"><img src="https://github.com/workersmakepossible/peoplesmanifesto/blob/main/assets/TPM%20Logo.png?raw=true" style="height:8vw; padding-bottom:5px;"></div>
-
-                
-                <div class="col-6 d-flex align-items-center" style="justify-content:space-around;">
-                    <button class="btn btn-lg navbutton"><a class="navlink" href="https://peoplesmanifesto.net/events.html">Events</a></button>
-                    <button class="btn btn-lg navbutton"><a class="navlink" href="https://peoplesmanifesto.net/summary.html">Summary</a></button>
-
-                    <button class="btn btn-lg navbutton dropdown-toggle"
-                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chapters</button>
+        <!--mobilenavbar-->
+        <div class="pos-f-t navontop" style="position:sticky; top:0px; z-index:9; margin-top:-1px">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4 navmenu">
+                    <button class="btn btn-block navbtn">
+                        <a class="mobilenavlink" href="https://peoplesmanifesto.net/indexmb.html">Home Page</a>
+                    </button>
+                    <button class="btn btn-block navbtn">
+                        <a class="mobilenavlink" href="https://peoplesmanifesto.net/eventsmb.html">Events</a>
+                    </button>
+                    <button class="btn btn-block navbtn">
+                        <a class="mobilenavlink" href="https://peoplesmanifesto.net/summarymb.html">Summary</a>
+                    </button>
+                    <button class="btn btn-block navbtn dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom:8px;">
+                        Chapters
+                    </button>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="https://peoplesmanifesto.net/democracy.html">To (Re)Build A Democratic Society</a>
-                        <a class="dropdown-item" href="https://peoplesmanifesto.net/costofliving.html">Arresting the Rising Cost of Living</a>
-                        <a class="dropdown-item" href="https://peoplesmanifesto.net/labour.html">An Economy that Works for Workers</a>
-                        <a class="dropdown-item" href="https://peoplesmanifesto.net/housing.html">Housing: Shelter, Not Commodity</a>
-                        <a class="dropdown-item" href="https://peoplesmanifesto.net/retirement.html">Ensuring Retirement Adequacy</a>
-                        <a class="dropdown-item" href="https://peoplesmanifesto.net/healthcare.html">Equitable Healthcare for All</a>
-                        <a class="dropdown-item" href="https://peoplesmanifesto.net/climate.html">Tackling the Climate Crisis with Environmental Justice</a>
+                        <a class="dropdown-item" href="https://peoplesmanifesto.net/democracymb.html">To (Re)Build A Democratic Society</a>
+                        <a class="dropdown-item" href="https://peoplesmanifesto.net/costoflivingmb.html">Arresting the Rising Cost of Living</a>
+                        <a class="dropdown-item" href="https://peoplesmanifesto.net/labourmb.html">An Economy that Works for Workers</a>
+                        <a class="dropdown-item" href="https://peoplesmanifesto.net/housingmb.html">Housing: Shelter, Not Commodity</a>
+                        <a class="dropdown-item" href="https://peoplesmanifesto.net/retirementmb.html">Ensuring Retirement Adequacy</a>
+                        <a class="dropdown-item" href="https://peoplesmanifesto.net/healthcaremb.html">Equitable Healthcare for All</a>
+                        <a class="dropdown-item" href="https://peoplesmanifesto.net/climatemb.html">Tackling the Climate Crisis</a>
                     </div>
 
-                    <button class="btn btn-lg navbutton navbutton-active">Signatories</button>
+                    <button class="btn btn-block navbtn">
+                        <a class="mobilenavlink" href="https://peoplesmanifesto.net/signatoriesmb.html">Signatories</a>
+                    </button>
 
-
-                    
-                    <button class="btn btn-lg navbutton"><a class="navlink" href="https://peoplesmanifesto.net/downloads.html">Downloads</a></button>
-                    <button class="btn btn-lg navbutton"><a class="navlink" href="https://peoplesmanifesto.net/"><i class="bi bi-house-fill"></i></a></button> 
+                    <button class="btn btn-block navbtn">
+                        <a class="mobilenavlink" href="https://peoplesmanifesto.net/downloadsmb.html">Downloads</a>
+                    </button>
                 </div>
-                <div class="col-1"></div>
-            </div>     
+            </div>
+            <nav class="navbar navbar-dark">
+                <button aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarToggleExternalContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            </nav>
         </div>
 
         <div class="container mt-5">
 
-            <div class="mb-5 mx-5 h4">
+            <div class="mb-5 h4 mx-3">
                 
                 <p>This is a list of the current organisational signatories which have signed on to and contributed to The People's Manifesto 2024. If your organisation would like to sign on, please fill in <a href="https://forms.gle/yBvJarg8ZHcyPfa68">this organisational signatory form</a>.</p>
                 
@@ -161,10 +170,10 @@
 
             <!--Beyond the Hijab-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://beyondhijab.sg/wp-content/uploads/2020/05/beyond-the-hijab-logo-_-header.jpg" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Beyond the Hijab Singapore
 
@@ -178,10 +187,10 @@
 
             <!--End Female Genital Cutting Singapore-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://lh4.googleusercontent.com/RDBaNOvTFEenUL7jeDUEQMi9toRISDpE_Q6taesVCmzfgtWUioaiKDVvtxKWH8Duz9SnNGoK23JylNyqtz8PP2U=w16383" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         End Female Genital Cutting Singapore
 
@@ -195,10 +204,10 @@
 
              <!--FTC SG-->
              <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://raw.githubusercontent.com/workersmakepossible/ELRSWL/main/images/logos/forthechildren.jpg" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         For The Children SG
 
@@ -212,10 +221,10 @@
 
             <!--Function 8-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/F8.png?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Function 8
 
@@ -230,10 +239,10 @@
 
             <!--Heckin'-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/heckin.png?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Heckin' Unicorn 
 
@@ -248,10 +257,10 @@
 
             <!--IndigNation-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://ugc.production.linktr.ee/JiIFtDBxTQalivgTZbdq_lGgh89zIq27Qq06z?io=true&size=avatar-v3_0" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         IndigNation
 
@@ -266,10 +275,10 @@
             
             <!--Living Soil-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://images.squarespace-cdn.com/content/v1/62f3681ce2bc1b243bcce915/510b0b03-c1ec-4a6e-8df0-2920f8f9ada8/Living+Soil+Logo++%283%29.png?format=1500w" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Living Soil Asia
 
@@ -284,10 +293,10 @@
 
             <!--MMW-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/449845326_1447309889323632_8114679744509911522_n.jpg?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Makan Minum Workers
 
@@ -302,10 +311,10 @@
 
             <!--MARUAH-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/MARUAH.png?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         MARUAH
 
@@ -320,10 +329,10 @@
 
             <!--Migrant Workers Singapore-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://raw.githubusercontent.com/workersmakepossible/ELRSWL/main/images/logos/mws.webp" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Migrant Workers Singapore
 
@@ -338,10 +347,10 @@
 
             <!--Minority Voices-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/minorityvoices.jpeg?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Minority Voices
 
@@ -356,10 +365,10 @@
 
             <!--NN-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvOUubUewbBJVRWN7wqHADn4_mNEbHZoA_g&s" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         New Naratif
 
@@ -374,10 +383,10 @@
 
             <!--NTU Divest-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="data:image/jpeg;base64,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" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         NTU Divest
 
@@ -392,10 +401,10 @@
 
             <!--FNAF-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://raw.githubusercontent.com/workersmakepossible/ELRSWL/main/images/logos/fnaf.png" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         NTU Financial Aid Friends
 
@@ -410,10 +419,10 @@
 
             <!--Orang Laut-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="data:image/png;base64,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" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Orang Laut SG
 
@@ -428,10 +437,10 @@
 
             <!--Penawar-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://ugc.production.linktr.ee/9E2BgY09TVi5IaH60ZOM_L7a64cUM3mm7VisV?io=true&size=avatar-v3_0" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Penawar Support Group
 
@@ -446,10 +455,10 @@
 
             <!--QUASA-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://ugc.production.linktr.ee/5XICnL0KRBqKYCqfxolT_cqgylWR67F7iXeCU?io=true&size=avatar-v3_0" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         QUASA Singapore
 
@@ -464,10 +473,10 @@
 
             <!--RSCLS-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://assets-global.website-files.com/63ae5870f706a1b199e0de94/63ae5e0db337a63c54f0dcfb_rainbow-families-logo.png" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Rainbow Families Singapore
 
@@ -482,10 +491,10 @@
 
             <!--RSCLS-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*uI1BYPLq5zM42b_rvl4YhA.jpeg" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         RSCLS
 
@@ -500,10 +509,10 @@
 
             <!--SG Bus Drivers-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/busdrivers.jpg?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         SG Bus Drivers
 
@@ -518,10 +527,10 @@
 
             <!--SG Riders-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/sgriders.jpeg?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         SG Riders
 
@@ -536,10 +545,10 @@
 
             <!--SnT-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/sickntired.jpg?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Sick and Tired
 
@@ -554,10 +563,10 @@
 
             <!--SG Climate Rally-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://raw.githubusercontent.com/workersmakepossible/ELRSWL/main/images/logos/sgcr.jpg" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         SG Climate Rally
 
@@ -572,10 +581,10 @@
 
             <!--Singapore Unbound-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/sgunbound.jpeg?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Singapore Unbound
 
@@ -590,10 +599,10 @@
 
             <!--S4F-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/S4FFF.jpg?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Students for a Fossil Free Future
 
@@ -608,10 +617,10 @@
             
             <!--TJC-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://raw.githubusercontent.com/workersmakepossible/ELRSWL/main/images/logos/TJC.png" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Transformative Justice Collective
 
@@ -625,10 +634,10 @@
 
             <!--The Online Citizen-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://cdn5.cdn-telegram.org/file/hkJmmX9kdCfFo7R57zVr63J0ftugd2s_oeCr06aegymlJq4a2PR3LMBzK5C_uSiOsFGAHlSOx3yug9csUulN9deJTJJ2EzhiUW_z0oZLQa4xnQktuxBwBqMLXVWMpWQe25zbuh9Zr_g1nlHGgNKw9jXv4vnxjbAYhCob_zYXb4z1mc0C280CmAKHbINMUUCkg_mNIAnC0Kmde_xjj_q5zS0itX9rfkw1u3VS66mED81LenU5-HkTX28UzdNogmqbKgCMGrDtu3ORRjjv86Fpxb_D9Tw9BlgdsGeCdxOw7y-LLNmFJxrNqa5hxIH-P11nOjObMK7qbembS3a5V7_K8A.jpg" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         The Online Citizen
 
@@ -643,10 +652,10 @@
 
             <!--Think Centre-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/tc.png?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Think Centre Singapore
 
@@ -661,10 +670,10 @@
 
             <!--UEU-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABcVBMVEX/V1b/////VFb/V1T9Vlb8WVX7YmD8ZWIAAAAjIyP8////WVf/V1L6urj9TU7+VVj+n53/XFv7WFuHODviUU7tU1EAHRyWPkVrLzLzWVYAIRYgHyHtVFoAGhujQUL+Vl4AGhX+3djf39/eUFmwRUMODg5bW1tMTEztVE4oKCj29vYMISPY2NhoaGhiMC++vr7KyspYKC/DS0svLy+WPz8AFB2srKx+fn7/SEoAIR07OzuCgoJQUFDu7u78z8seJCSmpqZycnIAHgAoIiYAFReRkZH83+D5e3zvY2b4WGP78PX96Of309D3p6UcFg7gWVj+NjuhQE1tMi+QQzoXHRMTJhwAIylYMilKLy0cGybOSUZXLS4qGyYiJyIbKSUvIxu1LzHXQksAAA6ROix6LyRAHB5bHxnvsLbYr6+WqKTCqKz///b1j5Drm51wi4fOlpO2lZSej4zAlJMAFQDPXFp0Lz81MB+hTEk0HyKCPzv+fouaSjbWAAANcklEQVR4nO2diVvbNh/H40OtE3txbQjUsUlagjlMaDKSJSQQAs2g3ejGto6ehG7v1l1lx/vufdd2f/0rybLjHAwn+Ih5/H3aRP5ZtvWJbskSicR1FsOwN8IOg7+KCaOvmDD6igmjr5gw+ooJo6+YMPqKCaOvmDD6igmjr5gw+ooJo6+YMPqKCaOvmDD6igmjr5gw+ooJo6+YMPqKCaOvmDD6igmjr5jw4gvFNJA8DowvmpgQJB5+QnscGF80eSoVjnbT3obFH01MyArGoy2PA+OLJk+l9Kd3Y8KpUEw4Qqws8rCgET/d3QIApBlJtG9Gi8A3MfC/CO/vP6FIAxZWE+wnrUdplmUVRhAsdCApoqk8kvVtOkecEQfMo029C2RA02PXUOMTCg+PUlCGrd08Y54BckFbJcpkMuQrQ5wjzgyYB0yZnszD1UxBUZQACLUPdrGMo91HSJ9ZP6tQyGbnLtfCkOMf/C4sWB6hq/H5MTMu4ASELJ3eQkobu1+gr620lUoZrT2fmfVNWmZmXRN4/wmJeDq1O1CW8pn1HD9a7OAh+49nBoxYkgjmG5owOjR+ELLsECGDCCe6mRvJIhMw4XAcXjPCtGZYLW9WlmUJ1lbs7PqXkulEglb5qpUguYVFmNUSbGCEgph6ZPUtSAWWyLSr4sVy1Hb9Fd8/eMRixVAIeXb3M4uQgYKfsqbmYNuDITbeck4udGNBAPg2sCWFCMXLrhm+x4SEIpBZkilm56vVeahqtf3VfJ+qTne1Wh12jtDA2erjx0tSjzC4OISXElJxc+HOnUY2m/16vXuSHa1Go3HBmUGP2UGPd+4/econQkillhDhxwUNq/D1l5r3Ov7wthQ2YXYWZxV+tfEWmeghwcwkDFtHCXpkBkzKs6ehErK8tHlHE0RJksTM8xwPv9lhoXaKKw17FMGH91DxIolCNRRCkICEBQGFgfelxqchoYQfFB7hC0KYuK6EskXoT6stNEKeVgQAcw2geZgPAXowbLXleAB42HDDnQPiEQuayQHyCd08wEbTmrA+TY/4ioSSx78brRBCkQ+WELBiXkat0Lz84n7hBnZmTnKkXSrJA5IcLuyWpP6z0pDHfB6Pj9iEeUwYXJuGBtq926Zets3vr16efnjbS2n5YcLg4pBeLTQ6baRkt3vWTkKddLrdJDR0u11sJ2qbSvarfbHZcr5S2DAJE4J2ZwmlNYBKGgBdvCSv5yRbvHRFzXQUfoAw0P4hJpQSLGrTDNQWvVJmYsEb8NNCyPYIva3xp4NQtAlx9vCXUAyFkMGEH83m0ZO9rfH5mSQe/bVrfDbo/mEfoegHYaefMPAe8HAcep0Pk9NBiHvAxwwm84UwQXpPgbfarJJmRG3hjaxUahOGUuP3E/pT0oRMyFx7Qlgf8j718e1USupDOax8KDG+EZKy1CYMeiSKpNIgCeM4HKmr50PJ55LGrvHDKkt9JOxMAaHUF4f+tGkCHadhEr1pdULIs6xJiMbT+ufxcTBH6uIzTkFCPAQOXt6T4DWSyFZPNMYxxZ8Abn5P94SAZYV0T1urGvcNjd/F+Ib71jyz+q/v0q6E3uG4VN/raRp7fv0DPhbS33GzfdcxQuLyl3jdE7IM+OwDp378+SfT8dPPPxLTz7984J1+2SOO2i+25cc+H7cY4fJs6Z5QFMBRikoRIQdFoX8p84OYUt7JvJ99V/SUgdsfscLl2XKMOATpQ+fzKeqN5X5DEdI3KS/1htzVvi16jhPyMO0iJ7on5EXhLjVdupsWL39VcQxCdtoIUzHhmIQMHRNOqJYx6ZWhEdYrZYraaC66872oVhwHzRWKKlb2QyNMuXrwBleiqBXOLaG+5jjgkpCQWw6F0H1J4yBslWotbCuXjcUiTI7FIkUZRQwPzy32CIu1knXgljC8srRHWOagUMj3OW6nAi0Gp7egtQlNNXLOJIQeuJXQCcHYhBV9r6bDgLe4tdKBjgkriBCajApXq3FNw4Qqcc3SMrwsanG4iCJrhWtBgA2qVekjxOeS6qIJdcDtQU/b4xFOQT4sczsUtQMdNRh4bOkRFtG5JucgLMKfYVEfo6SZgjgso6CahAeDhK2DmoOwBH0isKilUkhotC6IQ6jFuqoTQqMJI9EwIkioogJzNGFrg9ux4xCVunvUmGXpVOTDlXK5XDJGEcJYK/VSKUynOkIcKx9OBSEKqkGNIkTFq5MQGrhiBFMpDOpGZWRJg6FtwvJ2idrm9sMtS923vEeVpUNx2E+4B38CVENGhLCOCJtmPkSEqMavo4zXT1h3EOJI5ipUK6lSuGJ0pdAI92DgW3rFgB9JGOY1A1fvRRURJvUyTI4rFMZc1HHWw9G2YjZXV6DlAOG6UHhxuMhxTRUlQphe19ZQXFFJvaIjQtjCVpNN1FQ11vQKV0GEnIpL1oqKwA44vYmKnOkmpIrLagVHg1GvVLZRF761vFZDGZIyNtR6cRlBF3ea5fryIjyF0mRrI1lBFSK111R3yi6fM22jGK77xK41bYRNrwmnbiSqtjfxkNMFgoRejnlP32gidVcQL18dFxM6fE7hvIW3hCwtHDpGE9FMF55eo/DckGl742640Z3MqSZ8V+u2Kcr5gNRh2sUSznHmD1ePnHNfhNJyEoeHk2vDd6VSVN8Uotfzh0zi/JZTv/72u+n4/bdfiWX7j1ve6Y8D4jj4N3H8x3oQ0bm3c8AJIPZNs69qf35Dp9G8+os/zXl8ZvWjx+7m8V3p+zuraB6f2Xr9A769QFf/1JyvEqRpb+fxkWfH2sDB1QjIht7FcLfM0I2qZ2gFEasIz25LssLKAO2pABweEq62cvHy7UvP300URUnRtMyze0BgJVEE81mNCW7d0whCz98R/m/u6bNO8l379F4uI4T05p6PhNLM+qsnahutf+q2s1//b1YK6809X1IpDT6pzvUv+XryWH4c2moE7wl57WVjYFVbJ3t75uS6xCEAhb/U0wHC7ql60g1yheWId/U9IhQTQHmqtruDhEn19ERz0YgZkJer87wiZMAMyYOqTr5U83h93kUjZkBTSAiYQraDwZL79SZk1Hfqyxi125krjL14bQpr/PTDl3ihrLrWoihjRdXRoFYNI3bWX469Z6on+ZCse/KIUNicw1EIybZXqBK3RpXVErWGAJOdhU3HHn+u5Mm7+t6uXRNmnuNMp5eMNa6Fhvi3uTq1g7PimfqeVuSxHnLlfGgS4vWHHrVp5FfqGaLhSkaTay1y+1QdEm6YhGev8oAda+sijwjzHhLms6ddhKNvUwdcqeYkhPmzoQnjbQ7pST5c8HQdcKHRSeIIUxdh+uR0SKgnm1a12CgwbICp1I+ylH/R6JDacMWg9nVEuFKvW4iNFzw7ViT6vv6QucyJ5FzB7yDkdgyqCQn3YX2xoYZCKA0RStYuh/Af/i9JxGl/mlbrkOftzRfIUYEQqjv76gZl5sONHmGBdzGU7yUhLGleWKvVZ5NPFsh+nA652sOz53Eh+7yL26R6jWpyRWOIMJyyFNcW+dmZ9zMe6J259wcmLFH9hO3PNRBoSdNXWwBBFi5f7HOppHtnVptmhytTpMa3CL/iQZCplKyS/XgWj66LIC+M2K/rUqSBfb6Yt3MdFIswEx5UYI1focprJUKoNpaEoAmd4zTeSNBIMlXRZHdd19GbRK19SNjutNVw1+N7I4HN2b2n7R3Ue1quN1cqGDq7FMBOyXZAhsfavBEjaK/JPkO62fVVocwe8Gsl+FEMlkeEwMxENO3IeMgTOiSbAzoHq+FZ25SgsS/W9iEl+M1XbXVgECN5etY5Uwsh9PHRfm33C4ooy7JCRPbqUi7WZWdvvE12TwYIz07Vk7eSMPaWqFeOQ0i42XjXRclIJSJtLrSpFTokX04lzS2vBs2m2mqn8+5k/flgJLZPcpIAAtiTvY+QwXHoRTXfr/ePZ14NbAO2/m4TwIoi+FSKd7+UUEUmWa1P3MY0s6PpYu2mKDmPP/AVvW3B7PYpvk6Ulaftz5+jHmEX7ZG28OT9MQ2U/Ph/+cUDQp/Ez5++f/bx3JP19fXnC5XqbJ4RAPPgzYNxM+KV8+FkF7sQ/76jyMdLuVxuaelYlvMCAEA4T/097nDiFBNWkzIQcZplJIVXQF4E9HnqPOA4ZHwktPan6UmEcfhg3D9QFBNeLLxvYkIa6inwo/+0wbg+eHsHHjukDCYMMpUu5Pz7YxZQZM89JJYRGPTuRRoSbqHdFdLuy5vJd/dUju/3DVaMUN9oxtxo33PDdmJp/GXvIcgK50dIh0epo8PDw7uHR+6jcvI4BEDTMn6qcGy/W8nQ54js8KiVaiHS1tHf/hMCWgGK7KcAY/flZTEtIH1xC5Y06N2hIFKpwrC04KuYXgONYeU87G2JzC1cltJAdN9NvPJu10EJDwQJkDC4Nk0IiglHKlKELCIMrsYPQ8KD1s1xr4kWIRBvjv2XQSNFyCj0an7si6JEOJFiwugrJoy+YsLoKyaMvmLC6CsmjL5iwugrJoy+YsLoKyaMvmLC6CsmjL5iwugrJoy+YsLoKyaMvmLC6CsmjL5iwugrJoy+MCFznSUwiRsJcL2l3EzQ11vijcTNa66H/weDg/46tJaLzAAAAABJRU5ErkJggg==" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         UequalsU SG
 
@@ -679,10 +688,10 @@
             
             <!--WUSG-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/wusg.jpeg?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Wake Up Singapore
 
@@ -697,10 +706,10 @@
 
             <!--WSU-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://github.com/workersmakepossible/ELRSWL/blob/main/images/logos/wsu.jpg?raw=true" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         We Support Us
 
@@ -712,10 +721,10 @@
             
             <!--WMP-->
             <div class="row mb-4">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="https://raw.githubusercontent.com/workersmakepossible/ELRSWL/main/images/logos/wmp.png" class="logo">
                 </div>
-                <div class="col-10">
+                <div class="col-8">
                     <p class="h3">
                         Workers Make Possible
 
